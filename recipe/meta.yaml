@@ -1,5 +1,5 @@
 {% set name = "bmi_era5" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/gantian127/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 559b581997492ccfb6050033d2dde8897b2750b80f30e26503a897254b9101aa
+  sha256: 300e449ce8f0093914db166403b3d295f4e20dfb350f8b1c8fc2a42587a010db
 
 
 build:
