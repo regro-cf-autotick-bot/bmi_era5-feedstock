@@ -12,17 +12,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - bmipy
     - netcdf4
     - numpy
@@ -33,6 +33,8 @@ requirements:
     - cdsapi >=0.7.2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - bmi_era5
 
