@@ -16,7 +16,7 @@ Documentation: https://bmi-era5.readthedocs.io/
 
 bmi_era5 package is an implementation of the Basic Model Interface (BMI) for
 the ERA5 dataset. This package uses the CDS API to download the ERA5 dataset
-and wraps the dataset with BMI for data control and query (currently support 3 dimensional ERA5 dataset).
+and wraps the dataset with BMI for data control and query (currently support 3-dimensional ERA5 dataset).
 This package is not implemented for people to use but is the key element to
 convert the ERA5 dataset into a data component (pymt_era5) for the PyMT modeling
 framework developed by Community Surface Dynamics Modeling System (CSDMS).
